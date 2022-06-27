@@ -1,0 +1,22 @@
+{
+  "name": "jotai-experiments",
+  "license": "MIT",
+  "main": "./core/dist/index.js",
+  "module": "./core/dist/index.mjs",
+  "types": "./core/dist/index.d.ts",
+  "private": true,
+  "author": "Reaper <ahoy@barelyhuman.dev>",
+  "scripts": {
+    "build": "pnpm build -r",
+    "dev": "pnpm dev --parallel"
+  },
+  "prettier": "@barelyhuman/prettier-config",
+  "peerDependencies": {
+    "jotai-experiments": "*"
+  },
+  "packageManager": "pnpm@6.32.10",
+  "devDependencies": {
+    "tsup": "^6.1.2",
+    "typescript": "^4.7.4"
+  }
+}
