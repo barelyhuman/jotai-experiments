@@ -13,7 +13,8 @@
     },
     "prettier": "@barelyhuman/prettier-config",
     "peerDependencies": {
-      "jotai-experiments": "*"
+      "jotai-experiments": "*",
+      "jotai":"*"
     },
     "packageManager": "pnpm@6.32.10"
   }

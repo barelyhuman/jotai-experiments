@@ -7,6 +7,7 @@
   "private": true,
   "author": "Reaper <ahoy@barelyhuman.dev>",
   "scripts": {
+    "nuke": "find . -name 'node_modules' -type d -prune | xargs rm -rf",
     "build": "pnpm build -r",
     "dev": "pnpm dev --parallel"
   },
@@ -16,6 +17,9 @@
   },
   "packageManager": "pnpm@6.32.10",
   "devDependencies": {
+    "jotai-experiments": "workspace:*",
+    "jotai": "^1.7.2",
+    "jotai-form": "^0.0.1",
     "tsup": "^6.1.2",
     "typescript": "^4.7.4"
   }
