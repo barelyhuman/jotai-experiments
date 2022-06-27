@@ -1,0 +1,7 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": ["prettier"],
+  "rules": {
+    "curly": ["error", "multi-or-nest", "consistent"]
+  }
+}

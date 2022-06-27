@@ -9,7 +9,8 @@
   "scripts": {
     "nuke": "find . -name 'node_modules' -type d -prune | xargs rm -rf",
     "build": "pnpm build -r",
-    "dev": "pnpm dev --parallel"
+    "dev": "pnpm dev --parallel",
+    "fix": "eslint --fix ."
   },
   "prettier": "@barelyhuman/prettier-config",
   "peerDependencies": {
@@ -17,9 +18,14 @@
   },
   "packageManager": "pnpm@6.32.10",
   "devDependencies": {
-    "jotai-experiments": "workspace:*",
+    "@barelyhuman/prettier-config": "^1.0.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
     "jotai": "^1.7.2",
+    "jotai-experiments": "workspace:*",
     "jotai-form": "^0.0.1",
+    "prettier": "^2.7.1",
     "tsup": "^6.1.2",
     "typescript": "^4.7.4"
   }
